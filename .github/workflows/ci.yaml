@@ -14,8 +14,8 @@ jobs:
       - name: lint code
         run: yarn nx workspace-lint
 
-      - name: format code 
+      - name: format code
         run: yarn nx format:check
-      
-      - name: test code 
+
+      - name: test code
         run: yarn nx affected --target=test --parallel=3 --ci --code-coverage
