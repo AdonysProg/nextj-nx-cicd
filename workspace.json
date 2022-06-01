@@ -3,6 +3,8 @@
   "version": 2,
   "projects": {
     "api": "apps/api",
+    "dashboard": "apps/dashboard",
+    "dashboard-e2e": "apps/dashboard-e2e",
     "next-store": "apps/next-store",
     "next-store-e2e": "apps/next-store-e2e",
     "shared-types": "libs/shared-types",
