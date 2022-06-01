@@ -26,7 +26,7 @@ const ProductDescription = styled.p``
 
 export function Card(props: Product) {
   return (
-    <StyledCard>
+    <StyledCard data-id={props.id}>
       <ProductImage src="https://picsum.photos/200" />
       <TitleContainer>
         <Title>{props.title}</Title>

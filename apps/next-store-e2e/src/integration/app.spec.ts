@@ -3,7 +3,7 @@ describe('next-store', () => {
 
   it('should get the first product', () => {
     cy.get('input').first().type('first')
-    cy.get('li').first().should('have.text', 'First Product')
+    cy.get('[data-id="0"] > div > h1').should('have.text', 'First Product')
     cy.get('body').screenshot()
   })
 })

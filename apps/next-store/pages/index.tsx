@@ -48,7 +48,7 @@ export function Index({
         }}
       />
       <StyledPage>
-        {products.map((product) => (
+        {products.map((product, index: number) => (
           <Card
             key={product.id}
             id={product.id}
