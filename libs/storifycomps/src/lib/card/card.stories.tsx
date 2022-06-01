@@ -14,16 +14,19 @@ export default {
       control: {
         type: 'text',
       },
+      defaultValue: 'The River - Wage War',
     },
     price: {
       control: {
         type: 'text',
       },
+    defaultValue: '200 USD'
     },
     description: {
       control: {
         type: 'text',
       },
+      defaultValue: 'I SEE YOUR WANDERING EYES AND SECOND GLANCES'
     },
     brand: {
       control: {
@@ -33,6 +36,7 @@ export default {
     categories: {
       control: {
         type: 'text',
+        defaultValue: '["category1", "category2"]',
       },
     },
     image: {

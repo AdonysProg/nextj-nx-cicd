@@ -1,0 +1,11 @@
+{
+  "extends": ["@commitlint/config-conventional"],
+  "parserPreset": {
+    "parserOpts": {
+      "issuePrefixes": ["MED-"]
+    }
+  },
+  "rules": {
+    "references-empty": [2, "never"]
+  }
+}
