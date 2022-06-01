@@ -2,6 +2,10 @@
   "$schema": "./node_modules/nx/schemas/workspace-schema.json",
   "version": 2,
   "projects": {
-    "api": "apps/api"
+    "api": "apps/api",
+    "next-store": "apps/next-store",
+    "next-store-e2e": "apps/next-store-e2e",
+    "shared-types": "libs/shared-types",
+    "storifycomps": "libs/storifycomps"
   }
 }
