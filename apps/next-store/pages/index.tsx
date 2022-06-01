@@ -42,10 +42,7 @@ export function Index({
           display: 'flex',
           margin: '20px auto',
         }}
-      />
-      <StyledPage>
-        {products.map((product) => (
-          <Card
+      />    <StyledPage> {products.map((product) => (<Card
             key={product.id}
             id={product.id}
             title={product.title}
@@ -64,7 +61,6 @@ export function Index({
 
 export async function getServerSideProps(context) {
   let products: Product[] = []
-  console.log("AUYIDA")
   if (context.query.q) {
     const res = await fetch(`http://localhost:3333/search?q=${context.query.q}`)
     products = await res.json()

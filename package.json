@@ -79,8 +79,6 @@
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
       "nx run-many --all --target=lint"
-    ],
-    "*.js": "eslint --cache --fix",
-    "*.{js,css,md}": "prettier --write"
+    ]
   }
 }
