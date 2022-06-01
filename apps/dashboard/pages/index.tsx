@@ -48,13 +48,14 @@ export function Index() {
                 </svg>
                 <span>You&apos;re up and running</span>
               </h2>
-             
-            <a
-              target="_blank"
-              href="https://youtu.be/dQw4w9WgXcQ"
-              rel="noreferrer"
-            >
- What&apos;s next? </a>
+
+              <a
+                target="_blank"
+                href="https://youtu.be/dQw4w9WgXcQ"
+                rel="noreferrer"
+              >
+                What&apos;s next?{' '}
+              </a>
             </div>
             <div className="logo-container">
               <svg
@@ -67,22 +68,22 @@ export function Index() {
               </svg>
             </div>
           </div>
-
+        </div>
       </div>
-      </div>
-      <div style={{justifyContent: 'center', display: 'flex', marginBottom: 200}}>
-
-            <Card
-            brand='nextjs'
-            title='Next.js'
-            description='Next.js is.'
-            categories={['javascript', 'react', 'server-side rendering']}
-            id={1}
-            image='https://nextjs.org/static/images/next-logo.svg'
-            price={3000}
-            rating={4}
-            key={1}
-            />
+      <div
+        style={{ justifyContent: 'center', display: 'flex', marginBottom: 200 }}
+      >
+        <Card
+          brand="nextjs"
+          title="Next.js"
+          description="Next.js is."
+          categories={['javascript', 'react', 'server-side rendering']}
+          id={1}
+          image="https://nextjs.org/static/images/next-logo.svg"
+          price={3000}
+          rating={4}
+          key={1}
+        />
       </div>
     </StyledPage>
   )
