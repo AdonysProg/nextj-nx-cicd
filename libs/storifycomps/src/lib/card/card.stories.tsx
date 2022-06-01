@@ -20,13 +20,13 @@ export default {
       control: {
         type: 'text',
       },
-    defaultValue: '200 USD'
+      defaultValue: '200 USD',
     },
     description: {
       control: {
         type: 'text',
       },
-      defaultValue: 'I SEE YOUR WANDERING EYES AND SECOND GLANCES'
+      defaultValue: 'I SEE YOUR WANDERING EYES AND SECOND GLANCES',
     },
     brand: {
       control: {
@@ -52,7 +52,19 @@ export default {
   },
 } as Meta
 
-const Template: Story = (args) => <Card {...args} />
+const Template: Story = (args) => (
+  <Card
+    id={0}
+    title={''}
+    price={0}
+    rating={0}
+    description={''}
+    categories={[]}
+    brand={''}
+    image={''}
+    {...args}
+  />
+)
 
 export const Primary = Template.bind({})
 Primary.args = {}
