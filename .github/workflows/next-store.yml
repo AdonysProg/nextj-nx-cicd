@@ -8,6 +8,7 @@ on:
 
 jobs:
   main:
+    runs-on: ubuntu-latest
     name: Nx Cloud - Main Job
     uses: nrwl/ci/.github/workflows/nx-cloud-main.yml@v0.4
     with:
