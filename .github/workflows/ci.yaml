@@ -16,6 +16,3 @@ jobs:
 
       - name: format code
         run: yarn nx format:check
-
-      - name: test code
-        run: yarn nx affected --target=test --parallel=3 --ci --code-coverage
