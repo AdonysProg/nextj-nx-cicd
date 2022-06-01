@@ -4,6 +4,7 @@ import type { Product } from '@nextjs-circleci/shared-types'
 import { Card } from '@nextjs-circleci/storifycomps'
 const StyledPage = styled.div`
   display: flex;
+  justify-content: space-around;
 `
 
 export function Index({
@@ -17,7 +18,7 @@ export function Index({
   const [products, setProducts] = React.useState<Product[]>(initialProducts)
 
   React.useEffect(() => {
-    fetch(`http://localhost:3333/search?q=${search}`)
+    fetch(`/api/products?q=${search}`)
       .then((res) => res.json())
       .then((data) => setProducts(data))
   }, [search])
@@ -31,6 +32,8 @@ export function Index({
 
   return (
     <>
+      <a target="_blank" href="https://youtu.be/dQw4w9WgXcQ" rel="noreferrer">CI/CD - Click for more info
+      </a>
       <input
         type="text"
         value={search}
