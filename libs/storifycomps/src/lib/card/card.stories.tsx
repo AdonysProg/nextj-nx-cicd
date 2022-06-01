@@ -1,11 +1,10 @@
-import { Story, Meta } from '@storybook/react';
-import { Card } from './card';
+import { Story, Meta } from '@storybook/react'
+import { Card } from './card'
 
 export default {
   component: Card,
   title: 'Card',
-  argTypes:
-  {
+  argTypes: {
     id: {
       control: {
         type: 'text',
@@ -47,9 +46,9 @@ export default {
       },
     },
   },
-} as Meta;
+} as Meta
 
-const Template: Story = (args) => <Card {...args} />;
+const Template: Story = (args) => <Card {...args} />
 
-export const Primary = Template.bind({});
-Primary.args = {};
+export const Primary = Template.bind({})
+Primary.args = {}

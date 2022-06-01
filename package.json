@@ -82,7 +82,7 @@
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
-      "yarn format --uncommited"
+      "nx run-many --all --target=lint"
     ]
   }
 }

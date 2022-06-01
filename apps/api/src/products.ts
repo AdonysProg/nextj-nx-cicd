@@ -1,4 +1,4 @@
-import type { Product } from '@nextjs-circleci/shared-types';
+import type { Product } from '@nextjs-circleci/shared-types'
 
 export const products: Product[] = [
   {
@@ -45,4 +45,4 @@ export const products: Product[] = [
     brand: 'apple',
     image: 'https://picsum.photos/200',
   },
-];
+]

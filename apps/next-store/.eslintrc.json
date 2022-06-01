@@ -10,7 +10,8 @@
     {
       "files": ["*.ts", "*.tsx", "*.js", "*.jsx"],
       "rules": {
-        "@next/next/no-html-link-for-pages": ["error", "apps/next-store/pages"]
+        "@next/next/no-html-link-for-pages": ["error", "apps/next-store/pages"],
+        "require-jsdoc": "off"
       }
     },
     {

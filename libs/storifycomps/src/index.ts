@@ -1,2 +1,2 @@
-export * from './lib/card/card';
-export * from './lib/storifycomps';
+export * from './lib/card/card'
+export * from './lib/storifycomps'
