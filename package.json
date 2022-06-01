@@ -78,7 +78,8 @@
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
-      "nx run-many --all --target=lint"
+      "nx run-many --all --target=lint",
+      "nx format:write --uncommited"
     ]
   }
 }

@@ -30,6 +30,6 @@ server.on('error', console.error)
  * @returns {Promise<void>}
  */
 export const testingJsDocs = (name: string) => {
-  console.log("LEAVE ME ALONE!!", name)
-  return "DU HAST MICH GEFRAGT"
+  console.log('LEAVE ME ALONE!!', name)
+  return 'DU HAST MICH GEFRAGT'
 }

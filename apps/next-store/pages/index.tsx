@@ -42,7 +42,10 @@ export function Index({
           display: 'flex',
           margin: '20px auto',
         }}
-      />    <StyledPage> {products.map((product) => (<Card
+      />
+      <StyledPage>
+        {products.map((product) => (
+          <Card
             key={product.id}
             id={product.id}
             title={product.title}
