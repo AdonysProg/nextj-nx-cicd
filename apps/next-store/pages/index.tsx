@@ -14,7 +14,7 @@ export function Index({
   q: string
   products: Product[]
 }) {
-  const [search, setSearch] = React.useState(q)
+  const [search, setSearchT] = React.useState(q)
   const [products, setProducts] = React.useState<Product[]>(initialProducts)
 
   React.useEffect(() => {
@@ -25,7 +25,7 @@ export function Index({
 
   const onSearch = React.useCallback(
     (e: React.ChangeEvent<HTMLInputElement>) => {
-      setSearch(e.target.value)
+      setSearchT(e.target.value)
     },
     [],
   )
